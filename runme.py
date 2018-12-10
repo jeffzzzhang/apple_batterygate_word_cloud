@@ -18,7 +18,7 @@ d = path.dirname(__file__)
 #mpl.rcParams["font.sans-serif"] = ["Microsoft YaHei"]
 #mpl.rcParams['axes.unicode_minus'] = False
 
-text_ = open(path.join(d,'apple letter.txt')).read()
+text_ = open(path.join(d,'apology letter.txt')).read()
 wordlist = jieba.cut(text_,cut_all=True)
 wordlist_space_split = ' '.join(wordlist)
 apple_musk = np.array(Image.open(path.join(d,'apple_logo.png')))
